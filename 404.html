@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans+Arabic:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preload" as="image" href="/img/hero-orb.svg" />
+
+    <meta
+      name="description"
+      content="Art Village Agency — creative marketing that makes brands matter."
+    />
+    <meta
+      name="keywords"
+      content="Art Village Agency, creative marketing, branding, digital marketing"
+    />
+    <meta name="author" content="Art Village Agency" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Art Village Agency" />
+    <meta
+      property="og:title"
+      content="Art Village Agency — Creative Marketing That Makes Brands Matter"
+    />
+    <meta
+      property="og:description"
+      content="Art Village Agency turns bold ideas into meaningful brands, campaigns, and experiences."
+    />
+    <meta property="og:url" content="https://artvillage.agency" />
+    <meta
+      property="og:image"
+      content="https://artvillage.agency/img/card.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Art Village Agency — Creative Marketing That Makes Brands Matter"
+    />
+    <meta
+      name="twitter:description"
+      content="Art Village Agency turns bold ideas into meaningful brands, campaigns, and experiences."
+    />
+    <meta
+      name="twitter:image"
+      content="https://artvillage.agency/img/card.png"
+    />
+
+    <link rel="alternate" hreflang="en" href="" />
+    <link rel="alternate" hreflang="ar" href="" />
+    <link rel="alternate" hreflang="x-default" href="" />
+
+    <link rel="canonical" href="" />
+
+    <title>Art Village Agency</title>
+
+    <script>
+      (function () {
+        var pathname = window.location.pathname;
+        var lang = "en";
+
+        var pathMatch = pathname.match(/\/(ar|en)(\/|$|\?)/);
+        if (pathMatch) {
+          lang = pathMatch[1];
+        } else {
+          var search = window.location.search;
+          if (search && search.includes("?/")) {
+            var queryPath = search.substring(2);
+            var queryMatch = queryPath.match(/^(ar|en)(\/|$)/);
+            if (queryMatch) {
+              lang = queryMatch[1];
+            }
+          }
+        }
+
+        var translations = {
+          en: {
+            title:
+              "Art Village Agency — Creative Marketing That Makes Brands Matter",
+            description:
+              "Art Village Agency is a creative marketing agency turning bold ideas into meaningful brands, campaigns, and experiences.",
+            keywords:
+              "Art Village Agency, creative marketing, branding, digital marketing, Egypt, Saudi Arabia",
+            locale: "en_US",
+          },
+          ar: {
+            title:
+              "آرت فيليج أيجنسي — تسويق إبداعي يجعل العلامات التجارية مهمة",
+            description:
+              "آرت فيليج أيجنسي وكالة تسويق إبداعية تحوّل الأفكار الجريئة إلى علامات تجارية وحملات وتجارب مؤثرة.",
+            keywords: "آرت فيليج, وكالة تسويق, علامة تجارية, تسويق رقمي",
+            locale: "ar_SA",
+          },
+        };
+
+        var t = translations[lang] || translations.en;
+        var siteUrl = "https://artvillage.agency";
+
+        var currentUrl = siteUrl + pathname;
+        if (!pathname.match(/\/(ar|en)(\/|$)/)) {
+          currentUrl = siteUrl + "/" + lang;
+        }
+
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+        function updateMetaTag(name, content, attribute) {
+          attribute = attribute || "name";
+          var element = document.querySelector(
+            "meta[" + attribute + '="' + name + '"]'
+          );
+          if (!element) {
+            element = document.createElement("meta");
+            element.setAttribute(attribute, name);
+            document.head.appendChild(element);
+          }
+          element.setAttribute("content", content);
+        }
+
+        updateMetaTag("description", t.description);
+        updateMetaTag("keywords", t.keywords);
+        updateMetaTag("language", lang);
+
+        updateMetaTag("og:title", t.title, "property");
+        updateMetaTag("og:description", t.description, "property");
+        updateMetaTag("og:url", currentUrl, "property");
+        updateMetaTag("og:locale", t.locale, "property");
+
+        updateMetaTag("twitter:title", t.title);
+        updateMetaTag("twitter:description", t.description);
+
+        document.title = t.title;
+
+        var enUrl = siteUrl + "/en";
+        var arUrl = siteUrl + "/ar";
+
+        var hreflangEn = document.querySelector(
+          'link[rel="alternate"][hreflang="en"]'
+        );
+        if (hreflangEn) hreflangEn.setAttribute("href", enUrl);
+
+        var hreflangAr = document.querySelector(
+          'link[rel="alternate"][hreflang="ar"]'
+        );
+        if (hreflangAr) hreflangAr.setAttribute("href", arUrl);
+
+        var hreflangDefault = document.querySelector(
+          'link[rel="alternate"][hreflang="x-default"]'
+        );
+        if (hreflangDefault) hreflangDefault.setAttribute("href", enUrl);
+
+        var canonical = document.querySelector('link[rel="canonical"]');
+        if (canonical) canonical.setAttribute("href", currentUrl);
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-CmJEFrBs.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BONhEzr4.css">
+  </head>
+  <body>
+    <script>
+      (function () {
+        var l = window.location;
+        var pathname = l.pathname;
+
+        if (pathname.endsWith("/") && pathname !== "/") {
+          pathname = pathname.slice(0, -1);
+        }
+
+        var restOfPath = pathname.slice(1);
+        var redirectPath = "/?/" + restOfPath.replace(/&/g, "~and~");
+
+        if (l.search && l.search.length > 0 && !l.search.startsWith("?/")) {
+          redirectPath += "&" + l.search.slice(1).replace(/&/g, "~and~");
+        }
+
+        if (l.hash) {
+          redirectPath += l.hash;
+        }
+
+        var fullUrl =
+          l.protocol +
+          "//" +
+          l.hostname +
+          (l.port ? ":" + l.port : "") +
+          redirectPath;
+        window.location.replace(fullUrl);
+      })();
+    </script>
+    <noscript>
+      <p style="padding:1rem;font-family:sans-serif;">
+        <a href="/">Continue to Art Village Agency home</a>
+      </p>
+    </noscript>
+
+    <div id="root"></div>
+    <script>
+      (function (l) {
+        if (l.search[1] === "/" && l.search[0] === "?") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+
+          var pathname = l.pathname;
+          if (!pathname.endsWith("/") && pathname.split("/").length <= 3) {
+            pathname += "/";
+          }
+
+          window.history.replaceState(
+            null,
+            null,
+            (pathname.endsWith("/") ? pathname.slice(0, -1) : pathname) +
+              decoded +
+              l.hash
+          );
+        }
+      })(window.location);
+    </script>
+  </body>
+</html>
