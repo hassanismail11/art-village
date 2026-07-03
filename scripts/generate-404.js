@@ -58,7 +58,7 @@ const redirectScript = `
     </script>
     <noscript>
       <p style="padding:1rem;font-family:sans-serif;">
-        <a href="/">Continue to Flik Techs home</a>
+        <a href="/">Continue to Art Village Agency home</a>
       </p>
     </noscript>
 `;
