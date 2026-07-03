@@ -2,8 +2,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 import { getLocalizedPath, getBaseUrl } from "../../utils/paths";
-
-const SITE_URL = "https://artvillage.agency";
+import { SITE_URL } from "../../constants/site";
 
 function SEO({ title, description, keywords, image, type = "website" }) {
   const { i18n, t } = useTranslation();
