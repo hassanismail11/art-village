@@ -1,0 +1,88 @@
+{
+  "seo": {
+    "title": "Art Village Agency — Creative Marketing That Makes Brands Matter",
+    "description": "Art Village Agency is a creative marketing agency turning bold ideas into meaningful brands, campaigns, and experiences across Egypt and Saudi Arabia.",
+    "keywords": "Art Village Agency, creative marketing, branding, digital marketing, web development, Egypt, Saudi Arabia"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "portfolio": "Portfolio",
+    "clients": "Clients",
+    "contact": "Contact Us",
+    "switch-lang": "عربية"
+  },
+  "hero": {
+    "tagline": "Creative marketing that makes brands matter.",
+    "line1": {
+      "part1": "Creative",
+      "accent1": "Marketing",
+      "part2": "That Makes Brands",
+      "accent2": "Matter"
+    },
+    "line2": {
+      "accent": "Art Village Agency.. ",
+      "rest": "Where Ideas Become Impact."
+    }
+  },
+  "home": {
+    "services": {
+      "label": "Our Services",
+      "subtitle": "Creative services that make brands stand out."
+    },
+    "about": {
+      "label": "About Us",
+      "subtitle": "We turn bold ideas into meaningful brands, campaigns, and experiences.",
+      "p1": "Art Village is a creative marketing and advertising agency operating in the Egyptian and Saudi markets since 2019. We help brands grow through strategic thinking, distinctive branding, creative campaigns, social media, digital marketing, and design experiences that leave a lasting impression."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "subtitle": "Work that speaks for itself.",
+      "description": "We have more ideas waiting to bring your brand to life. Let’s create something remarkable together",
+      "values": {
+        "innovation": "Innovation",
+        "agility": "Agility",
+        "value": "Value",
+        "creativity": "Creativity"
+      },
+      "imageAlt": "Portfolio project {{number}}"
+    },
+    "cta": {
+      "text": "Explore more of our work or speak with our team for a tailored marketing consultation. We are ready to help move your brand forward.",
+      "button": "Get Started"
+    },
+    "clients": {
+      "label": "Our Clients",
+      "logoAlt": "Client logo {{number}}"
+    }
+  },
+  "services": {
+    "branding": {
+      "title": "Branding",
+      "items": ["Logo design & identity", "Brand guidelines"]
+    },
+    "software": {
+      "title": "Software Services",
+      "items": ["Web development", "App development"]
+    },
+    "marketing": {
+      "title": "Digital Marketing",
+      "items": ["Social media marketing", "SEO"]
+    },
+    "production": {
+      "title": "Production",
+      "items": ["Event production", "Video production"]
+    }
+  },
+  "footer": {
+    "links": "Links",
+    "contact-us": "Contact Us",
+    "copyright": "© 2026 Copyright | Art Village"
+  },
+  "notFound": {
+    "seoTitle": "Page not found — Art Village Agency",
+    "title": "Page not found",
+    "message": "The link may be broken or the page may have been removed.",
+    "backHome": "Back to home"
+  }
+}

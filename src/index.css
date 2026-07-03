@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ava-primary: #dc1fff;
+  --ava-primary-light: #d85aeb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  @apply bg-ava-bg bg-ava-gradient text-white antialiased;
+}
+
+.font-body {
+  line-height: 1.65;
+}
+
+@layer components {
+  .section-underline {
+    @apply mx-auto mt-2 h-0.5 w-12 bg-ava-primary;
+  }
+
+  .accent-text {
+    @apply text-ava-primary;
+  }
+}
