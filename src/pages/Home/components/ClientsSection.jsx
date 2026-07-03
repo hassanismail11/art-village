@@ -20,7 +20,7 @@ function ClientsSection() {
         <SectionHeader label={t("home.clients.label")} />
 
         <div
-          className="flex flex-wrap items-center justify-center gap-4"
+          className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
           dir="ltr"
         >
           {clientLogos.map((src, index) => (
